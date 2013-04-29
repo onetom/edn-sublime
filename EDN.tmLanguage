@@ -41,6 +41,14 @@
 		</dict>
 
 		<dict>
+			<key>match</key>
+			<string>:db/ident</string>
+
+			<key>name</key>
+			<string>variable.parameter.edn</string>
+		</dict>
+
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>2</key>
