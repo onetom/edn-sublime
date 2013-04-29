@@ -51,24 +51,33 @@
 		<dict>
 			<key>captures</key>
 			<dict>
-				<key>2</key>
+				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type.function-type.edn</string>
+					<string>keyword.control.edn</string>
 				</dict>
-				<key>4</key>
+
+				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.edn</string>
+					<string>support.function.edn</string>
+				</dict>
+
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.class.edn</string>
 				</dict>
 			</dict>
+
 			<key>match</key>
-			<string>(\b(?i:(defun|defmethod|defmacro))\b)(\s+)((\w|\-|\!|\?)*)</string>
+			<string>(:\w+)(\.(\w+))?(/(\w+))?</string>
+
 			<key>name</key>
-			<string>meta.function.edn</string>
+			<string>meta.keyword.edn</string>
 		</dict>
 
-		<dict>
+ 		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -84,51 +93,10 @@
 		</dict>
 
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.variable.edn</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.variable.edn</string>
-				</dict>
-			</dict>
 			<key>match</key>
-			<string>(\*)(\S*)(\*)</string>
-			<key>name</key>
-			<string>variable.other.global.edn</string>
-		</dict>
-
-		<dict>
-			<key>match</key>
-			<string>\b(?i:case|do|let|loop|if|else|when)\b</string>
-			<key>name</key>
-			<string>keyword.control.edn</string>
-		</dict>
-
-		<dict>
-			<key>match</key>
-			<string>\b(?i:eq|neq|and|or)\b</string>
-			<key>name</key>
-			<string>keyword.operator.edn</string>
-		</dict>
-
-		<dict>
-			<key>match</key>
-			<string>\b(?i:null|nil)\b</string>
+			<string>\b(?i:nil|true|false)\b</string>
 			<key>name</key>
 			<string>constant.language.edn</string>
-		</dict>
-
-		<dict>
-			<key>match</key>
-			<string>\b(?i:cons|car|cdr|cond|lambda|format|setq|setf|quote|eval|append|list|listp|memberp|t|load|progn)\b</string>
-			<key>name</key>
-			<string>support.function.edn</string>
 		</dict>
 
 		<dict>
